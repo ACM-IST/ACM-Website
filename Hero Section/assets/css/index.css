@@ -32,16 +32,19 @@ li {
 
 .main {
   width: 100%;
-  height: 100vh;
+  height: 44.75rem;
   /*
   if opening it with the live server use this path for the image 
   */
-  /*
+  
   background: linear-gradient(91deg, #106476 35.94%, rgba(52, 133, 150, 0) 100%),url("/assets/images/background.svg") no-repeat;
-  */
+  
   /*else use this absolute path for the image
   */
+  /*
   background: linear-gradient(91deg, #106476 35.94%, rgba(52, 133, 150, 0) 100%),url("/Users/fasihmuhammad/Desktop/Hero Section/assets/images/background.svg") no-repeat;
+  */
+  
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
@@ -53,7 +56,6 @@ li {
 .main .mainbody {
   width: 100%;
   height: auto;
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +67,7 @@ li {
 .main .mainbody .lefttext {
   width: 90.25%;
   padding: 2rem;
-  z-index: 1;
+  z-index: 0;
 }
 
 /*left div first text box*/
@@ -111,7 +113,7 @@ li {
 /*right div in main body*/
 .main .mainbody .righttext {
   width: 9.75%;
-  z-index: 1;
+  z-index: 0;
 }
 
 /*right div ul */
@@ -133,7 +135,7 @@ li {
 @media (max-width: 970px) {
   /*realated to the second div after main , mainbody*/
   .main .mainbody {
-    height: 100vh; /*give full view*/
+    height: 44.75rem; /*give full view*/
     overflow: auto; /*for scrolling*/
     display: block;
     position: relative;
