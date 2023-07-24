@@ -120,6 +120,7 @@ li {
 .main .mainbody .righttext .content ul {
   position: absolute;
   bottom: 0;
+  margin-bottom: 4rem;
   display: block;
   justify-content: flex-end;
   list-style-type: none;
