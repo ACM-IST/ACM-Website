@@ -1,325 +1,262 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 ul {
-  list-style: none;
+	list-style: none;
 }
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
-
-body{
-  width: 100%;
-  height: 100%;
-  padding: 0%;
-  margin: 0%;
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0%;
+	margin: 0%;
 }
-
 
 /* main */
 
 .main {
-  width:100;
-  /*
+	width: 100;
+	/*
   if opening it with the live server use this path for the image 
   */
-  
-  background: linear-gradient(91deg, #106476 35.94%, rgba(52, 133, 150, 0) 100%),url("/assets/images/background.svg") no-repeat;
-  
-  /*else use this absolute path for the image
+
+	background: linear-gradient(91deg, #106476 35.94%, rgba(52, 133, 150, 0) 100%),
+		url("/assets/images/background.svg") no-repeat;
+
+	/*else use this absolute path for the image
   */
-  /*
+	/*
   background: linear-gradient(91deg, #106476 35.94%, rgba(52, 133, 150, 0) 100%),url("/Users/fasihmuhammad/Desktop/Hero Section/assets/images/background.svg") no-repeat;
   */
 
-  background-size:cover;
-  flex-shrink: 0;
-  z-index: -1;
+	background-size: cover;
+	flex-shrink: 0;
+	z-index: -1;
 }
 
 /* main body*/
 
 .main .mainbody {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 0;
 }
 
 /*left div in mainbody css*/
 .main .mainbody .lefttext {
-  width: 90.25%;
-  min-height: 100vh; /* Set the minimum height to 100% of the viewport height */
-  padding-left: 2rem;
-  z-index: 0;
+	width: 90.25%;
+	min-height: 100vh; /* Set the minimum height to 100% of the viewport height */
+	padding-left: 2rem;
+	z-index: 0;
 }
 
 /*left div first text box*/
 .main .mainbody .lefttext .text1 {
-  color: #fff;
-  font-family: "Inter", Helvetica, Arial, sans-serif;
-  font-size: 5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-  letter-spacing: 0.025rem;
-  margin-top: 6.5rem;
+	color: #fff;
+	font-family: "Inter", Helvetica, Arial, sans-serif;
+	font-size: 5rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 130%;
+	letter-spacing: 0.025rem;
+	margin-top: 6.5rem;
 }
 
 /*left div second text box*/
 .main .mainbody .lefttext .text2 {
-  margin-top: 1.5rem;
-  color: #fff;
-  font-family: "Inter", Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 400;
+	margin-top: 1.5rem;
+	color: #fff;
+	font-family: "Inter", Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
 }
 
 /*left div bottom text box*/
 .main .mainbody .lefttext .bottomtext {
-  margin-top: 2rem;
-  display: flex;
-  color: rgba(255, 255, 255, 0.5);
-  font-family: Inter;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 126.523%;
-  text-align: center;
+	margin-top: 2rem;
+	display: flex;
+	color: rgba(255, 255, 255, 0.5);
+	font-family: Inter;
+	font-size: 2.5rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 126.523%;
+	text-align: center;
 }
 
 /*left dic bottom text box p css*/
 .main .mainbody .lefttext .bottomtext p {
-  padding: 1rem;
+	padding: 1rem;
 }
-
 
 /*right div in main body*/
 .main .mainbody .righttext {
-  width: 9.75%;
-  z-index: 0;
+	width: 9.75%;
+	z-index: 0;
 }
 
 /*right div ul */
 .main .mainbody .righttext .content ul {
-  position:absolute;
-  display: block;
-  list-style-type: none;
+	position: absolute;
+	display: block;
+	list-style-type: none;
 }
 
 /*right div li */
 .main .mainbody .righttext .content ul li {
-  margin-top: 3rem;
+	margin-top: 3rem;
 }
 
 /* Media Queries*/
 
-@media (max-width:900px){
+@media (max-width: 900px) {
+	.main .mainbody .lefttext .text1 {
+		font-size: 3.5rem;
+	}
+	.main .mainbody .lefttext .text2 {
+		font-size: 1rem;
+	}
+	.main .mainbody .lefttext .bottomtext {
+		font-size: 1.5rem;
+	}
 
+	.main .mainbody .righttext {
+		margin-bottom: 5rem;
+		margin-right: 0.5rem;
+	}
 
-  .main .mainbody .lefttext .text1 {
-    font-size: 3.5rem;
-
-  }
-  .main .mainbody .lefttext .text2 {
-    font-size: 1rem;
-
-  }
-  .main .mainbody .lefttext .bottomtext {
-    font-size: 1.5rem;
-
-  }
-
-  .main .mainbody .righttext {
-  
-    margin-bottom: 5rem;
-    margin-right:0.5rem;
-
-  }
-
-  .main .mainbody .righttext .content ul img{
-    width: 2rem;
-    height: 2rem;
-  }
-
-
-
+	.main .mainbody .righttext .content ul img {
+		width: 2rem;
+		height: 2rem;
+	}
 }
 
+@media (max-width: 750px) {
+	.main .mainbody .lefttext {
+		width: 100%;
+	}
+	/*right div and its contents*/
+	.main .mainbody .righttext {
+		margin-top: 1rem;
+		width: 100%;
+		position: absolute;
+		top: 0; /*to put right div on the top of left div*/
+	}
 
+	.main .mainbody .righttext .content {
+		display: flex;
+		justify-content: center;
+	}
 
+	.main .mainbody .righttext .content ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
 
-@media (max-width:750px){
-
-
-  .main .mainbody .lefttext{
-    width: 100%;
-  }
-  /*right div and its contents*/
-  .main .mainbody .righttext {
-    margin-top: 1rem;
-    width: 100%;
-    position: absolute;
-    top: 0; /*to put right div on the top of left div*/
-  }
-
-
-  .main .mainbody .righttext .content {
-    display: flex;
-    justify-content: center;
-  }
-
-  .main .mainbody .righttext .content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .main .mainbody .righttext .content ul li {
-    display: inline-block;
-    margin: 1rem;
-  }
-
-
+	.main .mainbody .righttext .content ul li {
+		display: inline-block;
+		margin: 1rem;
+	}
 }
 
+@media (max-width: 650px) {
+	.main .mainbody .lefttext {
+		margin-top: 1.2rem;
+	}
+	.main .mainbody .lefttext .text1 {
+		font-size: 3.3rem;
+	}
+	.main .mainbody .lefttext .text2 {
+		font-size: 0.9rem;
+	}
+	.main .mainbody .lefttext .bottomtext {
+		font-size: 1.4rem;
+	}
 
-@media (max-width:650px){
-
-
-  .main .mainbody .lefttext{
-    margin-top: 1.2rem;
-  }
-  .main .mainbody .lefttext .text1 {
-    font-size: 3.3rem;
-
-  }
-  .main .mainbody .lefttext .text2 {
-    font-size: 0.9rem;
-
-  }
-  .main .mainbody .lefttext .bottomtext {
-    font-size: 1.4rem;
-
-  }
-
-  .main .mainbody .righttext {
-    margin-bottom: 5rem;
-    margin-right:0.5rem;
-
-  }
-
-
-
+	.main .mainbody .righttext {
+		margin-bottom: 5rem;
+		margin-right: 0.5rem;
+	}
 }
 
+@media (max-width: 616px) {
+	.main .mainbody .lefttext .text1 {
+		font-size: 3rem;
+	}
 
-@media (max-width:616px){
-
-
-
-  .main .mainbody .lefttext .text1 {
-    font-size: 3rem;
-
-  }
- 
-  .main .mainbody .righttext {
-
-    margin-right:0.5rem;
-
-  }
-
-
-
+	.main .mainbody .righttext {
+		margin-right: 0.5rem;
+	}
 }
 
-@media (max-width:565px){
+@media (max-width: 565px) {
+	.main .mainbody .lefttext .text1 {
+		font-size: 2.8rem;
+	}
+	.main .mainbody .lefttext .text2 {
+		font-size: 0.9rem;
+	}
+	.main .mainbody .lefttext .bottomtext {
+		font-size: 1.4rem;
+	}
 
-
-  .main .mainbody .lefttext .text1 {
-    font-size: 2.8rem;
-
-  }
-  .main .mainbody .lefttext .text2 {
-    font-size: 0.9rem;
-
-  }
-  .main .mainbody .lefttext .bottomtext {
-    font-size: 1.4rem;
-
-  }
-
-  .main .mainbody .righttext {
-
-    margin-right:0.5rem;
-
-  }
-
-
-
+	.main .mainbody .righttext {
+		margin-right: 0.5rem;
+	}
 }
 
-@media (max-width:530px){
-
-
-  .main .mainbody .lefttext .text1 {
-    font-size: 2.6rem;
-
-  }
-  .main .mainbody .lefttext .text2 {
-    font-size: 0.8rem;
-
-  }
-
-
-
+@media (max-width: 530px) {
+	.main .mainbody .lefttext .text1 {
+		font-size: 2.6rem;
+	}
+	.main .mainbody .lefttext .text2 {
+		font-size: 0.8rem;
+	}
 }
 
+@media (max-width: 500px) {
+	/*left div in the mainbody and it content*/
+	.main .mainbody .lefttext {
+		width: 100%;
+	}
+	.main .mainbody .lefttext .text1 {
+		font-size: 2.5rem;
+	}
 
-@media (max-width:500px){
+	.main .mainbody .lefttext .text2 {
+		font-size: 0.8rem;
+	}
 
-  /*left div in the mainbody and it content*/
-  .main .mainbody .lefttext{
-    width:100%;
-  }
-  .main .mainbody .lefttext .text1 {
-    font-size: 2.5rem;
+	/*right div and its contents*/
+	.main .mainbody .righttext {
+		width: 100%;
+		position: absolute;
+		top: 0; /*to put right div on the top of left div*/
+	}
 
-  }
+	.main .mainbody .righttext .content ul img {
+		width: 2rem;
+		height: 2rem;
+	}
 
-  .main .mainbody .lefttext .text2 {
-    font-size: 0.8rem;
-  }
+	.main .mainbody .righttext .content {
+		display: flex;
+		justify-content: center;
+	}
 
- 
+	.main .mainbody .righttext .content ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
 
-  /*right div and its contents*/
-  .main .mainbody .righttext {
-    width: 100%;
-    position: absolute;
-    top: 0; /*to put right div on the top of left div*/
-  }
-
-  .main .mainbody .righttext .content ul img{
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .main .mainbody .righttext .content {
-    display: flex;
-    justify-content: center;
-  }
-
-  .main .mainbody .righttext .content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .main .mainbody .righttext .content ul li {
-    display: inline-block;
-    margin: 1rem;
-  }
+	.main .mainbody .righttext .content ul li {
+		display: inline-block;
+		margin: 1rem;
+	}
 }
